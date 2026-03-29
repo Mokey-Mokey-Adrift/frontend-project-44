@@ -7,7 +7,7 @@ https://asciinema.org/a/6YyefFFN858jA6oN
 Калькулятор
 https://asciinema.org/a/JBjbkfMJdCeKGkXA
 
-НОЛ
+НОД
 https://asciinema.org/a/6G7KFiWQcgqpCtv8
 
 Прогрессия
