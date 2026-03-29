@@ -1,6 +1,6 @@
 const getRandomNumber = (min = 1, max = 50) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-const nod = (a, b) => {
+const gcd = (a, b) => {
   while (b !== 0) {
     const temp = b;
     b = a % b;
@@ -8,10 +8,11 @@ const nod = (a, b) => {
   }
   return a;
 };
+
 export const generateRound = () => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const question = `${num1} ${num2}`;
-  const correctAnswer = String(nod(num1, num2));
+  const correctAnswer = String(gcd(num1, num2));
   return { question, correctAnswer };
 };

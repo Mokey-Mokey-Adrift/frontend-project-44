@@ -8,10 +8,10 @@ https://asciinema.org/a/6YyefFFN858jA6oN
 https://asciinema.org/a/JBjbkfMJdCeKGkXA
 
 НОД
-https://asciinema.org/a/6G7KFiWQcgqpCtv8
+https://asciinema.org/a/IaUC0L405NsLeJMh
 
 Прогрессия
 https://asciinema.org/a/olx664gIJlYcgu3t
 
 Простое число
-https://asciinema.org/a/x8E5hJb93PKFjwjG
+https://asciinema.org/a/d2P7hm2i6ANbLwy7
