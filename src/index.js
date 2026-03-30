@@ -18,9 +18,10 @@ export const runGame = (gameDescription, generateRound) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!`)
-      return
+      process.exit(1)
     }
   }
 
   console.log(`Congratulations, ${name}!`)
+  process.exit(0)
 }
