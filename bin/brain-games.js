@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { runGame } from '../src/index.js'
-import { generateRound } from '../src/games/even.js'
+import greetUser from '../src/cli.js'
 
-const description = 'Answer "yes" if the number is even, otherwise answer "no"'
-runGame(description, generateRound)
+greetUser()
