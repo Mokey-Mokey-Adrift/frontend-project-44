@@ -1,7 +1,6 @@
 const getRandomNumber = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min
 
-// eslint-disable-next-line @stylistic/arrow-parens
-const isPrime = (num) => {
+const isPrime = num => {
   if (num < 2) return false
   if (num === 2) return true
   if (num % 2 === 0) return false
