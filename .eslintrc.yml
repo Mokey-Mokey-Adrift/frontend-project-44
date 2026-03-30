@@ -3,6 +3,8 @@ env:
   es2021: true
 extends:
   - eslint:recommended
+plugins:
+  - '@stylistic'
 parserOptions:
   ecmaVersion: 2022
   sourceType: module
@@ -11,3 +13,8 @@ rules:
   no-unused-vars:
     - error
     - argsIgnorePattern: ^_
+  '@stylistic/semi': error
+  '@stylistic/eol-last': error
+  '@stylistic/no-trailing-spaces': error
+  '@stylistic/arrow-parens': [error, as-needed]
+  '@stylistic/brace-style': error
