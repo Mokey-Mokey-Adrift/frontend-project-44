@@ -19,3 +19,19 @@ https://asciinema.org/a/olx664gIJlYcgu3t
 
 Простое число
 https://asciinema.org/a/d2P7hm2i6ANbLwy7
+
+
+# Brain Games
+
+Набор консольных игр, написанных на JavaScript. Включает в себя игры на чётность, калькулятор, поиск НОД, определение пропущенного числа в прогрессии и определение простых чисел.
+
+## Минимальные требования
+
+- Node.js >= 16
+
+## Установка
+
+```bash
+git clone https://github.com/Mokey-Mokey-Adrift/frontend-project-44.git
+cd frontend-project-44
+npm install
