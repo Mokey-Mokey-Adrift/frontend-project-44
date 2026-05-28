@@ -27,7 +27,7 @@ https://asciinema.org/a/d2P7hm2i6ANbLwy7
 
 ## Минимальные требования
 
-- Node.js >= 16
+- Node.js &gt;= 16
 
 ## Установка
 
@@ -35,3 +35,24 @@ https://asciinema.org/a/d2P7hm2i6ANbLwy7
 git clone https://github.com/Mokey-Mokey-Adrift/frontend-project-44.git
 cd frontend-project-44
 npm install
+npm link
+```
+## Запуск игр
+
+После установки можно запускать игры из терминала:
+```bash
+brain-games        # приветствие
+brain-even         # игра на чётность
+brain-calc         # калькулятор
+brain-gcd          # поиск НОД
+brain-progression  # прогрессия
+brain-prime        # простое число
+```
+## Или напрямую через Node.js без глобальной установки:
+```bash
+node bin/brain-even.js
+node bin/brain-calc.js
+node bin/brain-gcd.js
+node bin/brain-progression.js
+node bin/brain-prime.js
+```
