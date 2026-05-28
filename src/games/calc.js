@@ -6,6 +6,8 @@ const operations = [
   { symbol: '*', compute: (a, b) => a * b },
 ]
 
+export const description = 'What is the result of the expression?'
+
 export const generateRound = () => {
   const num1 = getRandomNumber()
   const num2 = getRandomNumber()
@@ -14,4 +16,10 @@ export const generateRound = () => {
   const question = `${num1} ${operation.symbol} ${num2}`
   const correctAnswer = String(operation.compute(num1, num2))
   return { question, correctAnswer }
+}
+
+export const runCalcGame = () => {
+  import('../index.js').then(({ runGame }) => {
+    runGame(description, generateRound)
+  })
 }

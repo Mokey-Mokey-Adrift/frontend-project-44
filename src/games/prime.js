@@ -12,9 +12,17 @@ const isPrime = (num) => {
   return true
 }
 
+export const description = 'Answer "yes" if given number is prime. Otherwise answer "no"'
+
 export const generateRound = () => {
   const number = getRandomNumber()
   const question = `${number}`
   const correctAnswer = isPrime(number) ? 'yes' : 'no'
   return { question, correctAnswer }
+}
+
+export const runPrimeGame = () => {
+  import('../index.js').then(({ runGame }) => {
+    runGame(description, generateRound)
+  })
 }

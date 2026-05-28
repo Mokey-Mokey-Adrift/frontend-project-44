@@ -9,10 +9,18 @@ const gcd = (a, b) => {
   return a
 }
 
+export const description = 'Find the greatest common divisor of given numbers'
+
 export const generateRound = () => {
   const num1 = getRandomNumber()
   const num2 = getRandomNumber()
   const question = `${num1} ${num2}`
   const correctAnswer = String(gcd(num1, num2))
   return { question, correctAnswer }
+}
+
+export const runGcdGame = () => {
+  import('../index.js').then(({ runGame }) => {
+    runGame(description, generateRound)
+  })
 }

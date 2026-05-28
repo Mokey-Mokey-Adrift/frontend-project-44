@@ -19,4 +19,12 @@ const generateProgression = () => {
   return { question, correctAnswer }
 }
 
+export const description = 'What number is missing in the progression?'
+
 export const generateRound = () => generateProgression()
+
+export const runProgressionGame = () => {
+  import('../index.js').then(({ runGame }) => {
+    runGame(description, generateRound)
+  })
+}
