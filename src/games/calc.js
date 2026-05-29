@@ -1,3 +1,5 @@
+import { runGame } from '../index.js'
+
 const getRandomNumber = (min = 1, max = 20) => Math.floor(Math.random() * (max - min + 1)) + min
 
 const operations = [
@@ -19,7 +21,5 @@ export const generateRound = () => {
 }
 
 export const runCalcGame = () => {
-  import('../index.js').then(({ runGame }) => {
-    runGame(description, generateRound)
-  })
+  runGame(description, generateRound)
 }

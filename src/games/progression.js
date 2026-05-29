@@ -1,3 +1,5 @@
+import { runGame } from '../index.js'
+
 const getRandomNumber = (min = 1, max = 20) => Math.floor(Math.random() * (max - min + 1)) + min
 
 const generateProgression = () => {
@@ -24,7 +26,5 @@ export const description = 'What number is missing in the progression?'
 export const generateRound = () => generateProgression()
 
 export const runProgressionGame = () => {
-  import('../index.js').then(({ runGame }) => {
-    runGame(description, generateRound)
-  })
+  runGame(description, generateRound)
 }

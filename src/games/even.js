@@ -1,3 +1,5 @@
+import { runGame } from '../index.js'
+
 const isEven = num => num % 2 === 0
 
 export const description = 'Answer "yes" if the number is even, otherwise answer "no"'
@@ -10,7 +12,5 @@ export const generateRound = () => {
 }
 
 export const runEvenGame = () => {
-  import('../index.js').then(({ runGame }) => {
-    runGame(description, generateRound)
-  })
+  runGame(description, generateRound)
 }

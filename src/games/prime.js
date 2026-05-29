@@ -1,3 +1,5 @@
+import { runGame } from '../index.js'
+
 const getRandomNumber = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min
 
 const isPrime = (num) => {
@@ -22,7 +24,5 @@ export const generateRound = () => {
 }
 
 export const runPrimeGame = () => {
-  import('../index.js').then(({ runGame }) => {
-    runGame(description, generateRound)
-  })
+  runGame(description, generateRound)
 }

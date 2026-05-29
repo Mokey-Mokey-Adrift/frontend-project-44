@@ -1,3 +1,5 @@
+import { runGame } from '../index.js'
+
 const getRandomNumber = (min = 1, max = 50) => Math.floor(Math.random() * (max - min + 1)) + min
 
 const gcd = (a, b) => {
@@ -20,7 +22,5 @@ export const generateRound = () => {
 }
 
 export const runGcdGame = () => {
-  import('../index.js').then(({ runGame }) => {
-    runGame(description, generateRound)
-  })
+  runGame(description, generateRound)
 }
